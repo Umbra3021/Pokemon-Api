@@ -1,0 +1,45 @@
+body{
+    background: url("/img/back.png");
+    background-repeat: no-repeat;
+}
+
+.main{
+    
+    width: 889px;
+    height: 500px;
+    background: url("/img/guess.jpg");
+    background-position: center;
+    margin-left: 22%;
+    margin-top: 10%;
+    
+    border-radius: 5%;
+    border: 1px solid black;
+}
+
+::placeholder{
+    text-align: center;
+}
+
+input{
+    margin-top: 25%;
+    border: 0;
+    border-bottom: 2px solid black;
+    height:30px ;
+    width: 40%;
+    margin-left: 10%;
+    text-align: center;
+}
+
+input[type=submit]{
+    margin-top: 5%;
+    width: 60px;
+    border: 1px solid black;
+    margin-left: 25%;
+
+}
+
+@media (max-width:1400px){
+    .main{
+        margin-left: 2%;
+    }
+}

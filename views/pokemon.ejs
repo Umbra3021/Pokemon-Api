@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <title>Pokemon found!</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+    <!-- <div class="btn">
+        <h2>Go back?</h2>
+    </div> -->
+    <div class="main">
+        <img src="<%= img%>">
+        <h1><%=name %></h1>
+        <div class="info">
+        <% for(var i=0;i<clas.length;i++){ %>
+            <% if (clas.length==1){ %>
+                <h3 style="margin-left:15%;"><%=clas[0]%></h3>
+           <% } else{ %>
+                <h3><%=clas[i]%></h3>
+            <% } %>
+       <% } %>
+        </div>
+       <div class="info2">
+       <table width="100%">
+        <tr>
+            <td>Hp :<%=hp%></td>
+            <td>Attack :<%=atk%></td>
+            <td>Defense :<%=def%></td>
+        </tr>
+        <tr>
+            <td>Special Attack :<%=spat%></td>
+            <td>Special Defense :<%=spdf%></td>
+            <td>Speed :<%=sp%></td>
+        </tr>
+       </table>
+        </div>
+    </div>
+    <script src="js/jquery-3.6.3.min.js">
+    </script>
+    <script src="js/script.js"></script>
+</body>
