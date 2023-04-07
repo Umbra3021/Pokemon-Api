@@ -1,6 +1,7 @@
 body{
     background: url("/img/back.png");
     background-repeat: no-repeat;
+    max-width: 850px;
 }
 
 .main{

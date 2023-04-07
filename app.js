@@ -22,8 +22,10 @@ app.get("/",function(req,res){
 
 app.post("/",function(req,res){
 
-    const name=req.body.poki;
-    const url="https://pokeapi.co/api/v2/pokemon/"+name;
+    let name=req.body.poki;
+    let pname=name.toLowerCase();
+
+    const url="https://pokeapi.co/api/v2/pokemon/"+pname;
     https.get(url,function(response){
         const chunks=[];
         console.log(response.statusCode);
