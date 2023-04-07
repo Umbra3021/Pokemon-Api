@@ -10,10 +10,11 @@ h3{
 }
 
 body{
-    background:url("/img/poki.jpg");
+    background:url("/img/back2.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    max-width: 850px;
+    max-height: 850px;
+    height: 100%;
 }
 
 .main{
@@ -24,7 +25,7 @@ body{
     background-color: rgb(255, 255, 255,0.8);
     width: 500px;
     height: 600px;
-    margin-left: 45%;
+    margin-left: 20%;
     border-radius: 10%;
     border: 5px solid black;
 }
@@ -80,4 +81,15 @@ td{
     background-size: 0% 0% , 100% 100%;
 }
 
-
+@media(max-width:1400px) {
+    .main{
+        margin: 5% 10%;
+    }
+    
+}
+@media(max-width:950px)
+{   
+    .main{
+        margin-left: 2%;
+    }
+}

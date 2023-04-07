@@ -1,46 +1,59 @@
-body{
+
+
+body {
     background: url("/img/back.png");
     background-repeat: no-repeat;
     max-width: 850px;
-}
-
-.main{
-    
-    width: 889px;
-    height: 500px;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f5f5f5;
+    max-width: 850px;
+  }
+  
+  .form-signin {
     background: url("/img/guess.jpg");
-    background-position: center;
-    margin-left: 22%;
-    margin-top: 10%;
-    
-    border-radius: 5%;
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    padding: 15% 5%;
+    margin: 0 auto;
+    border-radius: 10%;
     border: 1px solid black;
-}
+  }
 
-::placeholder{
-    text-align: center;
-}
+  #pokemon{
+    width: 60%;
+  }
 
-input{
-    margin-top: 25%;
-    border: 0;
-    border-bottom: 2px solid black;
-    height:30px ;
-    width: 40%;
-    margin-left: 10%;
-    text-align: center;
-}
+  .form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .form-signin .form-control:focus {
+    z-index: 2;
+  }
+  .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    width: 20%;
+  }
+  
 
-input[type=submit]{
-    margin-top: 5%;
-    width: 60px;
-    border: 1px solid black;
-    margin-left: 25%;
-
-}
-
-@media (max-width:1400px){
+@media (max-width:900px){
     .main{
-        margin-left: 2%;
+        width: 500px;
     }
 }
