@@ -58,15 +58,21 @@ h1,h3::first-letter{
 }
 
 .info2{
-    margin-left: 5%;
+    margin-left: 2%;
 }
 
 table{
+    table-layout: fixed;
     text-align: center;
+    background-color: bisque;
+    border-collapse:collapse ;
+    border-spacing:0 ;
 }
 
 td{
     border: 1px solid black;
+    padding: 1% 2%;
+    width: 40%;
 
 }
 

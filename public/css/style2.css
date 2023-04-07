@@ -1,7 +1,7 @@
 
 
 body {
-    background: url("/img/back.png");
+    background: url("/img/main-bg.jpg");
     background-repeat: no-repeat;
     max-width: 850px;
     display: -ms-flexbox;
@@ -18,6 +18,8 @@ body {
     background-color: #f5f5f5;
     max-width: 850px;
   }
+
+
   
   .form-signin {
     background: url("/img/guess.jpg");
@@ -52,8 +54,15 @@ body {
   }
   
 
-@media (max-width:900px){
-    .main{
-        width: 500px;
+@media (max-width:900px) {
+    body{
+      background: url("/img/720p.jpg");
     }
+}
+
+@media (min-width:2160px){
+  body{
+    background: url("/img/main.jpg");
+
+  }
 }
